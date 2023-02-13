@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/assets"
+        android:title="@string/assets"
+        android:icon="@drawable/ic_baseline_assessment_24">
+    </item>
+    <item
+        android:id="@+id/fund"
+        android:title="@string/fund"
+        android:icon="@drawable/ic_baseline_attach_money_24">
+
+    </item>
+    <item
+        android:id="@+id/account"
+        android:title="@string/account"
+        android:icon="@drawable/ic_baseline_account_circle_24">
+
+    </item>
+</menu>

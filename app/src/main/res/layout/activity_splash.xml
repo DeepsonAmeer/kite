@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/midnightblue"
+    tools:context=".Splash">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:visibility="visible"
+            app:srcCompat="@drawable/crypto"
+            tools:srcCompat="@drawable/crypto"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:fontFamily="monospace"
+            android:shadowColor="#0D0D0D"
+            android:shadowDx="20"
+            android:shadowDy="20"
+            android:shadowRadius="100"
+            android:text="Enjoy the better way to trade just on your phone."
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:text="Start trading and save your money and invest on kite crypto currency now."
+            android:textAlignment="center"
+            android:textColor="#F1D378"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btn_gs"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#4CAF50"
+            android:onClick="sendMessage"
+            android:text="Get Started"
+            android:textColor="#000000"
+            app:strokeColor="#FFC107"
+            android:layout_gravity="center_vertical|center_horizontal"
+            app:strokeWidth="20dp" />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".ProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            tools:srcCompat="@drawable/googleg_standard_color_18" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="John Doe"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/midnightblue"
+        android:baselineAligned="false">
+
+        <ImageButton
+            android:id="@+id/p_btn_home"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:backgroundTint="@color/midnightblue"
+            android:contentDescription="@string/hello_blank_fragment"
+            android:minHeight="48dp"
+            app:srcCompat="@drawable/ic_baseline_home_24" />
+
+        <ImageButton
+            android:id="@+id/p_btn_assets"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:backgroundTint="@color/midnightblue"
+            android:contentDescription="@string/app_name"
+            android:minHeight="48dp"
+            app:srcCompat="@drawable/ic_baseline_assessment_24" />
+
+        <ImageButton
+            android:id="@+id/p_btn_wallet"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:backgroundTint="@color/midnightblue"
+            android:contentDescription="@string/fund"
+            android:minHeight="48dp"
+            app:srcCompat="@drawable/baseline_account_balance_wallet_24" />
+
+        <ImageButton
+            android:id="@+id/p_btn_profile"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:backgroundTint="@color/midnightblue"
+            android:contentDescription="@string/account"
+            android:minHeight="48dp"
+            app:srcCompat="@drawable/ic_baseline_account_circle_24" />
+    </LinearLayout>
+</RelativeLayout>

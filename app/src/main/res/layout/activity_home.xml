@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wallet_bright_foreground_holo_dark"
+    tools:context=".Home">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/idEdtCurrency"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:focusable="auto"
+                    android:hint="Search Currency"
+                    android:minHeight="48dp"
+                    android:textColor="@color/midnightblue"
+                    android:textColorHighlight="@color/midnightblue"
+                    android:textColorHint="@color/midnightblue"
+                    android:textColorLink="@color/midnightblue" />
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:textAlignment="center"
+                app:cardBackgroundColor="@color/midnightblue"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:textAlignment="center">
+
+                    <TextView
+                        android:id="@+id/username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="John Doe"
+                        android:textAlignment="center"
+                        android:textColor="#FFC107"
+                        android:textSize="34sp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp" />
+
+                    <TextView
+                        android:id="@+id/username2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Current balance"
+                        android:textAlignment="center"
+                        android:textColor="#FFC107"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/balance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="NGN 5.000"
+                        android:textAlignment="center"
+                        android:textColor="#FFC107"
+                        android:textSize="48sp" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/midnightblue"
+        android:baselineAligned="false">
+
+        <ImageButton
+            android:id="@+id/btn_home"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:backgroundTint="@color/midnightblue"
+            android:contentDescription="@string/hello_blank_fragment"
+            android:minHeight="48dp"
+            app:srcCompat="@drawable/ic_baseline_home_24" />
+
+        <ImageButton
+            android:id="@+id/btn_assets"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:backgroundTint="@color/midnightblue"
+            android:contentDescription="@string/app_name"
+            android:minHeight="48dp"
+            app:srcCompat="@drawable/ic_baseline_assessment_24" />
+
+        <ImageButton
+            android:id="@+id/btn_wallet"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:backgroundTint="@color/midnightblue"
+            android:contentDescription="@string/fund"
+            android:minHeight="48dp"
+            app:srcCompat="@drawable/baseline_account_balance_wallet_24" />
+
+        <ImageButton
+            android:id="@+id/btn_profile"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:backgroundTint="@color/midnightblue"
+            android:contentDescription="@string/account"
+            android:minHeight="48dp"
+            app:srcCompat="@drawable/ic_baseline_account_circle_24" />
+    </LinearLayout>
+</RelativeLayout>

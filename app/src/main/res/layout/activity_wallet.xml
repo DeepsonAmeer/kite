@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btn_re"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/wallet_bright_foreground_holo_dark"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@color/midnightblue"
+                android:elevation="10dp"
+                android:orientation="vertical"
+                android:textAlignment="center">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:paddingStart="10dp"
+                    android:text="current balance"
+                    android:textColor="@color/orange"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="NGN 5,000"
+                    android:textAlignment="center"
+                    android:textColor="@color/orange"
+                    android:textSize="34sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/midnightblue"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/w_btn_widthraw"
+                    style="@android:style/Widget.Material.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Withdraw"
+                    android:textColor="@color/orange"
+                    app:icon="@drawable/ic_baseline_attach_money_24"
+                    app:iconTint="@color/orange" />
+
+                <Button
+                    android:id="@+id/w_btn_recharge"
+                    style="@android:style/Widget.Material.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Recharge"
+                    android:textColor="@color/orange"
+                    app:icon="@drawable/baseline_payment_24"
+                    app:iconTint="@color/orange" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/midnightblue"
+        android:baselineAligned="false">
+
+        <ImageButton
+            android:id="@+id/w_btn_home"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:backgroundTint="@color/midnightblue"
+            android:contentDescription="@string/hello_blank_fragment"
+            android:minHeight="48dp"
+            app:srcCompat="@drawable/ic_baseline_home_24" />
+
+        <ImageButton
+            android:id="@+id/w_btn_assets"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:backgroundTint="@color/midnightblue"
+            android:contentDescription="@string/app_name"
+            android:minHeight="48dp"
+            app:srcCompat="@drawable/ic_baseline_assessment_24" />
+
+        <ImageButton
+            android:id="@+id/w_btn_wallet"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:backgroundTint="@color/midnightblue"
+            android:contentDescription="@string/fund"
+            android:minHeight="48dp"
+            app:srcCompat="@drawable/baseline_account_balance_wallet_24" />
+
+        <ImageButton
+            android:id="@+id/w_btn_profile"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:backgroundTint="@color/midnightblue"
+            android:contentDescription="@string/account"
+            android:minHeight="48dp"
+            app:srcCompat="@drawable/ic_baseline_account_circle_24" />
+    </LinearLayout>
+</RelativeLayout>
